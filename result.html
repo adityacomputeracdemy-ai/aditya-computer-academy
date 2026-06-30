@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Result - Aditya Computer Academy</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+}
+
+.container{
+    max-width:800px;
+    margin:50px auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+}
+
+h1{
+    text-align:center;
+    color:#004aad;
+    margin-bottom:20px;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    margin-bottom:15px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#004aad;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.result{
+    display:none;
+    margin-top:20px;
+    padding:20px;
+    background:#f8f9fa;
+    border-radius:5px;
+}
+
+.pass{
+    color:green;
+    font-weight:bold;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<h1>Student Result</h1>
+
+<input type="text" id="roll"
+placeholder="Enter Enrollment Number">
+
+<button onclick="showResult()">
+View Result
+</button>
+
+<div class="result" id="result">
+
+<h2>Aditya Computer Academy</h2>
+<hr><br>
+
+<p><b>Enrollment No:</b> ACA250001</p>
+<p><b>Student Name:</b> Rahul Kumar</p>
+<p><b>Course:</b> ADCA</p>
+<p><b>Total Marks:</b> 420/500</p>
+<p><b>Percentage:</b> 84%</p>
+<p><b>Grade:</b> A+</p>
+<p class="pass"><b>Result:</b> PASS</p>
+
+<br>
+
+<button onclick="window.print()">
+Download / Print Result
+</button>
+
+</div>
+
+</div>
+
+<script>
+function showResult(){
+
+let roll =
+document.getElementById("roll").value;
+
+if(roll=="ACA250001"){
+document.getElementById("result").style.display="block";
+}else{
+alert("Result Not Found");
+}
+}
+</script>
+
+</body>
+</html>
