@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery - Aditya Computer Academy</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+}
+
+.header{
+    background:#004aad;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:30px auto;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.gallery-item{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.gallery-item img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.gallery-item p{
+    padding:15px;
+    text-align:center;
+    font-weight:bold;
+    color:#004aad;
+}
+
+.footer{
+    background:#002d66;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+<h1>Aditya Computer Academy</h1>
+<h3>Institute Gallery</h3>
+</div>
+
+<div class="container">
+
+<div class="gallery">
+
+<div class="gallery-item">
+<img src="photo1.jpg" alt="Lab Photo">
+<p>Computer Lab</p>
+</div>
+
+<div class="gallery-item">
+<img src="photo2.jpg" alt="Classroom">
+<p>Classroom Training</p>
+</div>
+
+<div class="gallery-item">
+<img src="photo3.jpg" alt="Students">
+<p>Students Activities</p>
+</div>
+
+<div class="gallery-item">
+<img src="logo.png" alt="Logo">
+<p>Aditya Computer Academy</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+© 2026 Aditya Computer Academy | All Rights Reserved
+</div>
+
+</body>
+</html>
