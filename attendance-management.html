@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Attendance Management - Aditya Computer Academy</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    padding:20px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    background:#fff;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+h1{
+    text-align:center;
+    color:#004aad;
+    margin-bottom:20px;
+}
+
+input{
+    padding:10px;
+    width:100%;
+    margin-bottom:20px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table,th,td{
+    border:1px solid #ddd;
+}
+
+th{
+    background:#004aad;
+    color:white;
+}
+
+th,td{
+    padding:12px;
+    text-align:center;
+}
+
+.present{
+    color:green;
+    font-weight:bold;
+}
+
+.absent{
+    color:red;
+    font-weight:bold;
+}
+
+button{
+    background:#004aad;
+    color:white;
+    border:none;
+    padding:8px 15px;
+    border-radius:5px;
+    cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Attendance Management</h1>
+
+<input type="date">
+
+<table>
+
+<tr>
+<th>Enrollment</th>
+<th>Student Name</th>
+<th>Course</th>
+<th>Status</th>
+<th>Action</th>
+</tr>
+
+<tr>
+<td>ACA250001</td>
+<td>Rahul Kumar</td>
+<td>ADCA</td>
+<td class="present">Present</td>
+<td>
+<button>Mark</button>
+</td>
+</tr>
+
+<tr>
+<td>ACA250002</td>
+<td>Amit Singh</td>
+<td>DCA</td>
+<td class="absent">Absent</td>
+<td>
+<button>Mark</button>
+</td>
+</tr>
+
+<tr>
+<td>ACA250003</td>
+<td>Priya Sharma</td>
+<td>CCC</td>
+<td class="present">Present</td>
+<td>
+<button>Mark</button>
+</td>
+</tr>
+
+</table>
+
+</div>
+
+</body>
+</html>
