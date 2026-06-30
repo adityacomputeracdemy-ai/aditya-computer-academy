@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Courses - Aditya Computer Academy</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+}
+
+.header{
+    background:#004aad;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:30px auto;
+}
+
+.courses{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h2{
+    color:#004aad;
+    margin-bottom:15px;
+}
+
+.card p{
+    margin:10px 0;
+    line-height:1.6;
+}
+
+button{
+    background:#004aad;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+    cursor:pointer;
+    margin-top:10px;
+}
+
+.footer{
+    background:#002d66;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <h1>Aditya Computer Academy</h1>
+    <h3>Our Courses</h3>
+</div>
+
+<div class="container">
+
+<div class="courses">
+
+<div class="card">
+    <h2>ADCA</h2>
+    <p><b>Duration:</b> 12 Months</p>
+    <p><b>Subjects:</b> MS Office, Tally, Internet, Programming</p>
+    <p><b>Fees:</b> ₹15,000</p>
+    <button>Apply Now</button>
+</div>
+
+<div class="card">
+    <h2>DCA</h2>
+    <p><b>Duration:</b> 6 Months</p>
+    <p><b>Subjects:</b> Computer Basics, MS Office</p>
+    <p><b>Fees:</b> ₹8,000</p>
+    <button>Apply Now</button>
+</div>
+
+<div class="card">
+    <h2>CCC</h2>
+    <p><b>Duration:</b> 3 Months</p>
+    <p><b>Subjects:</b> Computer Fundamentals, Internet</p>
+    <p><b>Fees:</b> ₹3,500</p>
+    <button>Apply Now</button>
+</div>
+
+<div class="card">
+    <h2>PGDCA</h2>
+    <p><b>Duration:</b> 12 Months</p>
+    <p><b>Subjects:</b> Advanced Computer Applications</p>
+    <p><b>Fees:</b> ₹20,000</p>
+    <button>Apply Now</button>
+</div>
+
+<div class="card">
+    <h2>Tally Prime</h2>
+    <p><b>Duration:</b> 3 Months</p>
+    <p><b>Subjects:</b> Accounting, GST, Payroll</p>
+    <p><b>Fees:</b> ₹5,000</p>
+    <button>Apply Now</button>
+</div>
+
+<div class="card">
+    <h2>MS Office</h2>
+    <p><b>Duration:</b> 2 Months</p>
+    <p><b>Subjects:</b> Word, Excel, PowerPoint</p>
+    <p><b>Fees:</b> ₹2,500</p>
+    <button>Apply Now</button>
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+    © 2026 Aditya Computer Academy | All Rights Reserved
+</div>
+
+</body>
+</html>
