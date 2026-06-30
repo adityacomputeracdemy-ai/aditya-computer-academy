@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fee Management - Aditya Computer Academy</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+    padding:20px;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    background:#fff;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+}
+
+h1{
+    text-align:center;
+    color:#004aad;
+    margin-bottom:20px;
+}
+
+.form{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+    margin-bottom:30px;
+}
+
+input,select{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    background:#004aad;
+    color:#fff;
+    border:none;
+    padding:12px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table,th,td{
+    border:1px solid #ddd;
+}
+
+th{
+    background:#004aad;
+    color:white;
+}
+
+th,td{
+    padding:12px;
+    text-align:center;
+}
+
+.paid{
+    color:green;
+    font-weight:bold;
+}
+
+.pending{
+    color:red;
+    font-weight:bold;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<h1>Fee Management</h1>
+
+<div class="form">
+<input type="text" placeholder="Enrollment Number">
+<input type="text" placeholder="Student Name">
+<input type="number" placeholder="Total Fees">
+<input type="number" placeholder="Paid Fees">
+
+<select>
+<option>Payment Status</option>
+<option>Paid</option>
+<option>Pending</option>
+</select>
+
+<button>Add Fee Record</button>
+</div>
+
+<table>
+<tr>
+<th>Enrollment</th>
+<th>Name</th>
+<th>Total Fees</th>
+<th>Paid</th>
+<th>Balance</th>
+<th>Status</th>
+<th>Receipt</th>
+</tr>
+
+<tr>
+<td>ACA250001</td>
+<td>Rahul Kumar</td>
+<td>15000</td>
+<td>10000</td>
+<td>5000</td>
+<td class="pending">Pending</td>
+<td><button>Print</button></td>
+</tr>
+
+<tr>
+<td>ACA250002</td>
+<td>Amit Singh</td>
+<td>12000</td>
+<td>12000</td>
+<td>0</td>
+<td class="paid">Paid</td>
+<td><button>Print</button></td>
+</tr>
+
+</table>
+
+</div>
+
+</body>
+</html>
