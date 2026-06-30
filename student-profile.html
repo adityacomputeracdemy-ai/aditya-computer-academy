@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Profile - Aditya Computer Academy</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+    padding:20px;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    background:white;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+    overflow:hidden;
+}
+
+.header{
+    background:#004aad;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.profile{
+    display:flex;
+    flex-wrap:wrap;
+    padding:30px;
+}
+
+.photo{
+    width:200px;
+    text-align:center;
+}
+
+.photo img{
+    width:150px;
+    height:180px;
+    border:2px solid #004aad;
+    border-radius:10px;
+}
+
+.details{
+    flex:1;
+    padding-left:30px;
+}
+
+.details table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.details td{
+    padding:10px;
+    border-bottom:1px solid #ddd;
+}
+
+.status{
+    margin-top:20px;
+    display:flex;
+    gap:20px;
+}
+
+.card{
+    flex:1;
+    background:#f8f9fa;
+    padding:20px;
+    border-radius:8px;
+    text-align:center;
+}
+
+.card h3{
+    color:#004aad;
+}
+
+button{
+    margin-top:20px;
+    background:#004aad;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+@media print{
+    button{
+        display:none;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+<h1>Aditya Computer Academy</h1>
+<h3>Student Profile</h3>
+</div>
+
+<div class="profile">
+
+<div class="photo">
+<img src="photo1.jpg" alt="Student Photo">
+<br>
+<button onclick="window.print()">
+Print Profile
+</button>
+</div>
+
+<div class="details">
+
+<table>
+<tr>
+<td><b>Enrollment No.</b></td>
+<td>ACA250001</td>
+</tr>
+
+<tr>
+<td><b>Student Name</b></td>
+<td>Rahul Kumar</td>
+</tr>
+
+<tr>
+<td><b>Father's Name</b></td>
+<td>Ramesh Kumar</td>
+</tr>
+
+<tr>
+<td><b>Course</b></td>
+<td>ADCA</td>
+</tr>
+
+<tr>
+<td><b>Mobile</b></td>
+<td>9876543210</td>
+</tr>
+
+<tr>
+<td><b>Email</b></td>
+<td>rahul@gmail.com</td>
+</tr>
+
+<tr>
+<td><b>Admission Date</b></td>
+<td>01/07/2026</td>
+</tr>
+
+<tr>
+<td><b>Status</b></td>
+<td>Active</td>
+</tr>
+</table>
+
+<div class="status">
+
+<div class="card">
+<h3>Fees</h3>
+<p>₹10,000 Paid</p>
+</div>
+
+<div class="card">
+<h3>Attendance</h3>
+<p>85%</p>
+</div>
+
+<div class="card">
+<h3>Result</h3>
+<p>PASS</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
