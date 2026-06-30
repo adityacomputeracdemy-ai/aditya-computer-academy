@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admit Card - Aditya Computer Academy</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    padding:20px;
+}
+
+.admit-card{
+    max-width:900px;
+    margin:auto;
+    background:#fff;
+    border:3px solid #004aad;
+    padding:30px;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+}
+
+.header{
+    text-align:center;
+    border-bottom:2px solid #004aad;
+    padding-bottom:15px;
+}
+
+.header h1{
+    color:#004aad;
+}
+
+.details{
+    display:flex;
+    justify-content:space-between;
+    margin-top:30px;
+}
+
+.left{
+    width:70%;
+}
+
+.left p{
+    margin:12px 0;
+    font-size:18px;
+}
+
+.photo{
+    width:150px;
+    height:180px;
+    border:2px solid #000;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.exam{
+    margin-top:30px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table,th,td{
+    border:1px solid #ddd;
+}
+
+th{
+    background:#004aad;
+    color:white;
+}
+
+th,td{
+    padding:12px;
+    text-align:center;
+}
+
+.footer{
+    margin-top:40px;
+    display:flex;
+    justify-content:space-between;
+}
+
+button{
+    margin-top:30px;
+    background:#004aad;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+@media print{
+    button{
+        display:none;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="admit-card">
+
+<div class="header">
+<h1>ADITYA COMPUTER ACADEMY</h1>
+<h3>EXAMINATION ADMIT CARD</h3>
+</div>
+
+<div class="details">
+
+<div class="left">
+<p><b>Enrollment No:</b> ACA250001</p>
+<p><b>Student Name:</b> Rahul Kumar</p>
+<p><b>Father's Name:</b> Ramesh Kumar</p>
+<p><b>Course:</b> ADCA</p>
+<p><b>Exam Date:</b> 15 July 2026</p>
+<p><b>Exam Time:</b> 10:00 AM</p>
+<p><b>Exam Center:</b> Aditya Computer Academy</p>
+</div>
+
+<div class="photo">
+Student Photo
+</div>
+
+</div>
+
+<div class="exam">
+
+<table>
+<tr>
+<th>Subject</th>
+<th>Date</th>
+<th>Time</th>
+</tr>
+
+<tr>
+<td>Computer Fundamentals</td>
+<td>15/07/2026</td>
+<td>10:00 AM</td>
+</tr>
+
+<tr>
+<td>MS Office</td>
+<td>16/07/2026</td>
+<td>10:00 AM</td>
+</tr>
+
+<tr>
+<td>Practical</td>
+<td>17/07/2026</td>
+<td>10:00 AM</td>
+</tr>
+
+</table>
+
+</div>
+
+<div class="footer">
+<div>
+_________________<br>
+Student Signature
+</div>
+
+<div>
+_________________<br>
+Director Signature
+</div>
+</div>
+
+<center>
+<button onclick="window.print()">
+Print / Download Admit Card
+</button>
+</center>
+
+</div>
+
+</body>
+</html>
