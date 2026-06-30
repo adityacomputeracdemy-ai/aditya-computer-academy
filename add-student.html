@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add Student - Aditya Computer Academy</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+}
+
+.container{
+    max-width:900px;
+    margin:30px auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+}
+
+h1{
+    text-align:center;
+    color:#004aad;
+    margin-bottom:20px;
+}
+
+.form-group{
+    margin-bottom:15px;
+}
+
+label{
+    display:block;
+    margin-bottom:5px;
+    font-weight:bold;
+}
+
+input, select, textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    background:#004aad;
+    color:white;
+    padding:12px 25px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#003080;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Add Student</h1>
+
+<form>
+
+<div class="form-group">
+<label>Enrollment Number</label>
+<input type="text" placeholder="ACA250001">
+</div>
+
+<div class="form-group">
+<label>Student Name</label>
+<input type="text">
+</div>
+
+<div class="form-group">
+<label>Father's Name</label>
+<input type="text">
+</div>
+
+<div class="form-group">
+<label>Date of Birth</label>
+<input type="date">
+</div>
+
+<div class="form-group">
+<label>Mobile Number</label>
+<input type="tel">
+</div>
+
+<div class="form-group">
+<label>Course</label>
+<select>
+<option>ADCA</option>
+<option>DCA</option>
+<option>CCC</option>
+<option>PGDCA</option>
+<option>Tally Prime</option>
+<option>MS Office</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Admission Date</label>
+<input type="date">
+</div>
+
+<div class="form-group">
+<label>Total Fees</label>
+<input type="number">
+</div>
+
+<div class="form-group">
+<label>Student Photo</label>
+<input type="file">
+</div>
+
+<div class="form-group">
+<label>Address</label>
+<textarea rows="4"></textarea>
+</div>
+
+<button type="submit">Save Student</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
