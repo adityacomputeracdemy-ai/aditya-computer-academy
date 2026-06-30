@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ID Card Generator - Aditya Computer Academy</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    padding:20px;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+}
+
+.form{
+    background:#fff;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    margin-bottom:30px;
+}
+
+.form h1{
+    text-align:center;
+    color:#004aad;
+    margin-bottom:20px;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    background:#004aad;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.id-card{
+    width:350px;
+    margin:30px auto;
+    background:white;
+    border:3px solid #004aad;
+    border-radius:15px;
+    overflow:hidden;
+    display:none;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+}
+
+.header{
+    background:#004aad;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+.photo{
+    width:100px;
+    height:120px;
+    border:2px solid #004aad;
+    margin:15px auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.details{
+    padding:20px;
+}
+
+.details p{
+    margin:10px 0;
+}
+
+.footer{
+    background:#004aad;
+    color:white;
+    text-align:center;
+    padding:10px;
+}
+
+.print-btn{
+    text-align:center;
+    margin-top:20px;
+}
+
+@media print{
+    .form,
+    .print-btn{
+        display:none;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="form">
+
+<h1>ID Card Generator</h1>
+
+<input type="text" id="enroll"
+placeholder="Enrollment Number">
+
+<input type="text" id="name"
+placeholder="Student Name">
+
+<input type="text" id="course"
+placeholder="Course">
+
+<input type="text" id="mobile"
+placeholder="Mobile Number">
+
+<button onclick="generateCard()">
+Generate ID Card
+</button>
+
+</div>
+
+<div class="id-card" id="card">
+
+<div class="header">
+<h2>ADITYA COMPUTER ACADEMY</h2>
+</div>
+
+<div class="photo">
+PHOTO
+</div>
+
+<div class="details">
+
+<p><b>Enrollment:</b>
+<span id="e"></span></p>
+
+<p><b>Name:</b>
+<span id="n"></span></p>
+
+<p><b>Course:</b>
+<span id="c"></span></p>
+
+<p><b>Mobile:</b>
+<span id="m"></span></p>
+
+</div>
+
+<div class="footer">
+Student Identity Card
+</div>
+
+</div>
+
+<div class="print-btn">
+<button onclick="window.print()">
+Print ID Card
+</button>
+</div>
+
+</div>
+
+<script>
+function generateCard(){
+
+document.getElementById("card").style.display="block";
+
+document.getElementById("e").innerHTML=
+document.getElementById("enroll").value;
+
+document.getElementById("n").innerHTML=
+document.getElementById("name").value;
+
+document.getElementById("c").innerHTML=
+document.getElementById("course").value;
+
+document.getElementById("m").innerHTML=
+document.getElementById("mobile").value;
+}
+</script>
+
+</body>
+</html>
