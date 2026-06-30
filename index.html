@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aditya Computer Academy</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f5f9ff;
+}
+
+header{
+    background:#004aad;
+    color:#fff;
+    padding:15px 50px;
+    position:sticky;
+    top:0;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+}
+
+.logo img{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    margin-right:15px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin:0 15px;
+}
+
+nav ul li a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.hero{
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3');
+    background-size:cover;
+    background-position:center;
+    height:85vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    color:white;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:50px;
+}
+
+.hero p{
+    margin:20px 0;
+    font-size:22px;
+}
+
+.btn{
+    background:#00aaff;
+    color:white;
+    padding:12px 25px;
+    border-radius:5px;
+    text-decoration:none;
+}
+
+.section{
+    padding:60px 10%;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:40px;
+    color:#004aad;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+    text-align:center;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:10px;
+}
+
+.contact{
+    background:#004aad;
+    color:white;
+    padding:50px;
+    text-align:center;
+}
+
+footer{
+    background:#002d66;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:30px;
+    text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+
+<div class="logo">
+<img src="logo.png" alt="Logo">
+<div>
+<h2>Aditya Computer Academy</h2>
+<p>Learn | Grow | Succeed</p>
+</div>
+</div>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#courses">Courses</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+</header>
+
+<section class="hero">
+<h1>Welcome to Aditya Computer Academy</h1>
+<p>Professional Computer Education Institute</p>
+<a href="#" class="btn">Apply Now</a>
+</section>
+
+<section id="about" class="section">
+<h2 class="title">About Us</h2>
+<p style="text-align:center;font-size:18px;">
+Aditya Computer Academy provides quality computer education,
+practical training and professional courses for students.
+</p>
+</section>
+
+<section id="courses" class="section">
+<h2 class="title">Our Courses</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>ADCA</h3>
+<p>Advanced Diploma in Computer Application</p>
+</div>
+
+<div class="card">
+<h3>DCA</h3>
+<p>Diploma in Computer Application</p>
+</div>
+
+<div class="card">
+<h3>CCC</h3>
+<p>Course on Computer Concepts</p>
+</div>
+
+<div class="card">
+<h3>Tally Prime</h3>
+<p>Accounting with GST</p>
+</div>
+
+<div class="card">
+<h3>MS Office</h3>
+<p>Word, Excel, PowerPoint</p>
+</div>
+
+<div class="card">
+<h3>Typing</h3>
+<p>Hindi & English Typing</p>
+</div>
+
+</div>
+</section>
+
+<section id="gallery" class="section">
+<h2 class="title">Gallery</h2>
+
+<div class="gallery">
+<img src="photo1.jpg">
+<img src="photo2.jpg">
+<img src="photo3.jpg">
+</div>
+</section>
+
+<section id="contact" class="contact">
+<h2>Contact Us</h2>
+
+<p><b>Aditya Computer Academy</b></p>
+<p>📞 9305066046 / 9506793790</p>
+<p>📍 Kandwa Pachkoshi Road, Aman Super Market, Varanasi - 221106</p>
+<p>✉ adityacomputeracademy@gmail.com</p>
+
+</section>
+
+<footer>
+© 2026 Aditya Computer Academy | All Rights Reserved
+</footer>
+
+<a class="whatsapp"
+href="https://wa.me/919305066046">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+</body>
+</html>
