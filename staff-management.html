@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Staff Management - Aditya Computer Academy</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    padding:20px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.header{
+    background:#004aad;
+    color:white;
+    padding:20px;
+    text-align:center;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+.form-box{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    margin-bottom:20px;
+}
+
+.form-box h2{
+    color:#004aad;
+    margin-bottom:15px;
+}
+
+input, select{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    background:#004aad;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.staff-table{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table, th, td{
+    border:1px solid #ddd;
+}
+
+th{
+    background:#004aad;
+    color:white;
+}
+
+th, td{
+    padding:12px;
+    text-align:center;
+}
+
+.edit{
+    background:green;
+}
+
+.delete{
+    background:red;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+    <h1>Aditya Computer Academy</h1>
+    <h3>Staff Management System</h3>
+</div>
+
+<div class="form-box">
+
+<h2>Add Staff</h2>
+
+<input type="text" placeholder="Staff ID">
+
+<input type="text" placeholder="Staff Name">
+
+<input type="text" placeholder="Designation">
+
+<input type="text" placeholder="Mobile Number">
+
+<input type="email" placeholder="Email">
+
+<select>
+    <option>Status</option>
+    <option>Active</option>
+    <option>Inactive</option>
+</select>
+
+<button>Add Staff</button>
+
+</div>
+
+<div class="staff-table">
+
+<h2 style="color:#004aad;margin-bottom:15px;">
+Staff List
+</h2>
+
+<table>
+
+<tr>
+<th>Staff ID</th>
+<th>Name</th>
+<th>Designation</th>
+<th>Mobile</th>
+<th>Status</th>
+<th>Action</th>
+</tr>
+
+<tr>
+<td>ST001</td>
+<td>Rahul Singh</td>
+<td>Computer Teacher</td>
+<td>9876543210</td>
+<td>Active</td>
+<td>
+<button class="edit">Edit</button>
+<button class="delete">Delete</button>
+</td>
+</tr>
+
+<tr>
+<td>ST002</td>
+<td>Amit Kumar</td>
+<td>Tally Trainer</td>
+<td>9876543211</td>
+<td>Active</td>
+<td>
+<button class="edit">Edit</button>
+<button class="delete">Delete</button>
+</td>
+</tr>
+
+<tr>
+<td>ST003</td>
+<td>Priya Sharma</td>
+<td>Office Staff</td>
+<td>9876543212</td>
+<td>Active</td>
+<td>
+<button class="edit">Edit</button>
+<button class="delete">Delete</button>
+</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+</body>
+</html>
