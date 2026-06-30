@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard - Aditya Computer Academy</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+}
+
+.header{
+    background:#004aad;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+.container{
+    display:flex;
+}
+
+.sidebar{
+    width:250px;
+    background:#002d66;
+    height:100vh;
+    padding-top:20px;
+}
+
+.sidebar a{
+    display:block;
+    color:white;
+    padding:15px 20px;
+    text-decoration:none;
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+.sidebar a:hover{
+    background:#004aad;
+}
+
+.main{
+    flex:1;
+    padding:30px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+.card h2{
+    color:#004aad;
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:30px;
+    font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <h1>Aditya Computer Academy</h1>
+    <h3>Admin Dashboard</h3>
+</div>
+
+<div class="container">
+
+<div class="sidebar">
+    <a href="#">📊 Dashboard</a>
+    <a href="#">👨‍🎓 Add Student</a>
+    <a href="#">📋 Manage Students</a>
+    <a href="#">📝 Admission Form</a>
+    <a href="#">📄 Generate Marksheet</a>
+    <a href="#">🏆 Generate Certificate</a>
+    <a href="#">💰 Fee Management</a>
+    <a href="#">📢 Notice Board</a>
+    <a href="#">🖼 Gallery</a>
+    <a href="#">⚙ Settings</a>
+    <a href="index.html">🏠 Home</a>
+</div>
+
+<div class="main">
+
+<h2>Dashboard Overview</h2>
+<br>
+
+<div class="cards">
+
+<div class="card">
+<h2>Total Students</h2>
+<p>150</p>
+</div>
+
+<div class="card">
+<h2>Courses</h2>
+<p>10</p>
+</div>
+
+<div class="card">
+<h2>Certificates</h2>
+<p>120</p>
+</div>
+
+<div class="card">
+<h2>Fees Collected</h2>
+<p>₹50K</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
