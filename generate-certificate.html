@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Generate Certificate - Aditya Computer Academy</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f0f4ff;
+    padding:20px;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+}
+
+h1{
+    text-align:center;
+    color:#004aad;
+    margin-bottom:20px;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    background:#004aad;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.certificate{
+    margin-top:30px;
+    border:8px solid #004aad;
+    padding:40px;
+    text-align:center;
+    background:#fff;
+}
+
+.certificate h2{
+    color:#004aad;
+    margin-bottom:20px;
+}
+
+.certificate p{
+    font-size:18px;
+    line-height:1.8;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<h1>Certificate Generator</h1>
+
+<input type="text" id="student" placeholder="Student Name">
+
+<input type="text" id="course" placeholder="Course Name">
+
+<input type="text" id="certificate" placeholder="Certificate Number">
+
+<button onclick="generate()">Generate Certificate</button>
+
+<div class="certificate" id="output" style="display:none;">
+
+<h2>ADITYA COMPUTER ACADEMY</h2>
+
+<h3>CERTIFICATE OF COMPLETION</h3>
+
+<p id="text"></p>
+
+<br><br>
+
+<p>
+Date: <span id="date"></span>
+</p>
+
+<br><br>
+
+<div style="display:flex;justify-content:space-between;">
+<span>Director Signature</span>
+<span>Institute Seal</span>
+</div>
+
+</div>
+
+</div>
+
+<script>
+function generate(){
+
+let name=document.getElementById("student").value;
+let course=document.getElementById("course").value;
+let cert=document.getElementById("certificate").value;
+
+document.getElementById("output").style.display="block";
+
+document.getElementById("text").innerHTML=
+"This is to certify that <b>"+name+
+"</b> has successfully completed the course <b>"+course+
+"</b> from Aditya Computer Academy. Certificate No: <b>"+cert+"</b>";
+
+document.getElementById("date").innerHTML=
+new Date().toLocaleDateString();
+}
+</script>
+
+</body>
+</html>
