@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manage Students - Aditya Computer Academy</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    padding:20px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+h1{
+    text-align:center;
+    color:#004aad;
+    margin-bottom:20px;
+}
+
+.search{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    margin-bottom:20px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table,th,td{
+    border:1px solid #ddd;
+}
+
+th{
+    background:#004aad;
+    color:white;
+}
+
+th,td{
+    padding:12px;
+    text-align:center;
+}
+
+.btn{
+    padding:8px 12px;
+    border:none;
+    border-radius:5px;
+    color:white;
+    cursor:pointer;
+}
+
+.edit{
+    background:#28a745;
+}
+
+.delete{
+    background:#dc3545;
+}
+
+.view{
+    background:#004aad;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Manage Students</h1>
+
+<input type="text"
+class="search"
+placeholder="Search Student...">
+
+<table>
+
+<tr>
+<th>Enrollment</th>
+<th>Name</th>
+<th>Course</th>
+<th>Mobile</th>
+<th>Actions</th>
+</tr>
+
+<tr>
+<td>ACA250001</td>
+<td>Rahul Kumar</td>
+<td>ADCA</td>
+<td>9876543210</td>
+<td>
+<button class="btn view">View</button>
+<button class="btn edit">Edit</button>
+<button class="btn delete">Delete</button>
+</td>
+</tr>
+
+<tr>
+<td>ACA250002</td>
+<td>Amit Singh</td>
+<td>DCA</td>
+<td>9876543211</td>
+<td>
+<button class="btn view">View</button>
+<button class="btn edit">Edit</button>
+<button class="btn delete">Delete</button>
+</td>
+</tr>
+
+<tr>
+<td>ACA250003</td>
+<td>Priya Sharma</td>
+<td>CCC</td>
+<td>9876543212</td>
+<td>
+<button class="btn view">View</button>
+<button class="btn edit">Edit</button>
+<button class="btn delete">Delete</button>
+</td>
+</tr>
+
+</table>
+
+</div>
+
+</body>
+</html>
