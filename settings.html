@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Settings - Aditya Computer Academy</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    padding:20px;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+}
+
+h1{
+    text-align:center;
+    color:#004aad;
+    margin-bottom:25px;
+}
+
+.form-group{
+    margin-bottom:20px;
+}
+
+label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:bold;
+}
+
+input, textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+textarea{
+    height:100px;
+}
+
+button{
+    background:#004aad;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.success{
+    display:none;
+    margin-top:20px;
+    padding:15px;
+    background:#d4edda;
+    color:#155724;
+    border-radius:5px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Website Settings</h1>
+
+<div class="form-group">
+<label>Institute Name</label>
+<input type="text" value="Aditya Computer Academy">
+</div>
+
+<div class="form-group">
+<label>Institute Logo</label>
+<input type="file">
+</div>
+
+<div class="form-group">
+<label>Mobile Number</label>
+<input type="text" value="9305066046">
+</div>
+
+<div class="form-group">
+<label>Email</label>
+<input type="email" value="info@adityacomputeracademy.com">
+</div>
+
+<div class="form-group">
+<label>Website URL</label>
+<input type="text" value="https://adityacomputer.iteducation.in">
+</div>
+
+<div class="form-group">
+<label>Address</label>
+<textarea>Kandwa Pachkoshi Road, Santi Super Market ke Bagal me, Varanasi - 221106</textarea>
+</div>
+
+<button onclick="saveSettings()">
+Save Settings
+</button>
+
+<div class="success" id="msg">
+✅ Settings Saved Successfully!
+</div>
+
+</div>
+
+<script>
+function saveSettings(){
+document.getElementById("msg").style.display="block";
+}
+</script>
+
+</body>
+</html>
