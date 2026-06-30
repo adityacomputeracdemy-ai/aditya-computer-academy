@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Search - Aditya Computer Academy</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    padding:20px;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+}
+
+.header{
+    background:#004aad;
+    color:white;
+    padding:20px;
+    text-align:center;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+.search-box{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+input{
+    width:100%;
+    padding:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    margin-bottom:15px;
+    font-size:16px;
+}
+
+button{
+    background:#004aad;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.result{
+    display:none;
+    margin-top:20px;
+    background:#f8f9fa;
+    padding:20px;
+    border-radius:10px;
+    border-left:5px solid #004aad;
+}
+
+.result h2{
+    color:#004aad;
+    margin-bottom:15px;
+}
+
+.result p{
+    margin:10px 0;
+    font-size:16px;
+}
+
+.status{
+    color:green;
+    font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+    <h1>Aditya Computer Academy</h1>
+    <h3>Student Search System</h3>
+</div>
+
+<div class="search-box">
+
+    <input type="text"
+    id="search"
+    placeholder="Enter Enrollment Number">
+
+    <button onclick="searchStudent()">
+        Search Student
+    </button>
+
+    <div class="result" id="result">
+
+        <h2>Student Details</h2>
+
+        <p><b>Enrollment No:</b> ACA250001</p>
+
+        <p><b>Name:</b> Rahul Kumar</p>
+
+        <p><b>Father Name:</b> Ramesh Kumar</p>
+
+        <p><b>Course:</b> ADCA</p>
+
+        <p><b>Mobile:</b> 9876543210</p>
+
+        <p><b>Admission Date:</b> 01/07/2026</p>
+
+        <p><b>Status:</b>
+        <span class="status">Active</span></p>
+
+    </div>
+
+</div>
+
+</div>
+
+<script>
+function searchStudent(){
+
+let enroll =
+document.getElementById("search").value;
+
+if(enroll=="ACA250001"){
+    document.getElementById(
+    "result").style.display="block";
+}
+else{
+    alert("Student Not Found");
+}
+}
+</script>
+
+</body>
+</html>
