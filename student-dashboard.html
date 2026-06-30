@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Dashboard - Aditya Computer Academy</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+}
+
+.header{
+    background:#004aad;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+.container{
+    display:flex;
+}
+
+.sidebar{
+    width:250px;
+    background:#002d66;
+    height:100vh;
+}
+
+.sidebar a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:15px;
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+.sidebar a:hover{
+    background:#004aad;
+}
+
+.main{
+    flex:1;
+    padding:30px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+.card h3{
+    color:#004aad;
+    margin-bottom:10px;
+}
+
+button{
+    background:#004aad;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+    cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <h1>Aditya Computer Academy</h1>
+    <h3>Student Dashboard</h3>
+</div>
+
+<div class="container">
+
+<div class="sidebar">
+    <a href="#">🏠 Dashboard</a>
+    <a href="#">👤 My Profile</a>
+    <a href="#">📄 My Marksheet</a>
+    <a href="#">🏆 My Certificate</a>
+    <a href="#">🎫 Admit Card</a>
+    <a href="#">💰 Fee Status</a>
+    <a href="#">
