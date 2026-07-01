@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Registration</title>
+
+<style>
+body{
+    font-family:Arial;
+    background:#f5f7fa;
+    padding:20px;
+}
+.container{
+    max-width:700px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px #ccc;
+}
+input,select{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+}
+button{
+    background:#004aad;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    cursor:pointer;
+}
+.result{
+    margin-top:20px;
+    padding:15px;
+    background:#e8f5e9;
+    display:none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Student Registration Form</h2>
+
+<input type="text" id="name" placeholder="Student Name">
+
+<input type="text" id="father" placeholder="Father Name">
+
+<input type="text" id="mobile" placeholder="Mobile Number">
+
+<select id="course">
+    <option>ADCA</option>
+    <option>DCA</option>
+    <option>CCC</option>
+    <option>PGDCA</option>
+</select>
+
+<button onclick="registerStudent()">
+Register Student
+</button>
+
+<div class="result" id="result">
+    <h3>Registration Successful</h3>
+    <p><b>Enrollment No:</b>
+    <span id="enroll"></span></p>
+</div>
+
+</div>
+
+<script>
+function registerStudent(){
+
+let num = Math.floor(Math.random()*900000)+100000;
+
+document.getElementById("enroll").innerHTML =
+"ACA" + num;
+
+document.getElementById("result").style.display =
+"block";
+}
+</script>
+
+</body>
+</html>
