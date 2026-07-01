@@ -1,51 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>QR Certificate Verification</title>
+<title>QR Certificate Verification - Aditya Computer Academy</title>
 
 <style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
 body{
-    font-family:Arial;
     background:#f5f7fa;
     padding:20px;
 }
 
 .container{
-    max-width:700px;
+    max-width:800px;
     margin:auto;
     background:white;
     padding:30px;
     border-radius:10px;
-    box-shadow:0 0 10px #ccc;
-    text-align:center;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
 }
 
-h1{
+.header{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.header h1{
     color:#004aad;
 }
 
-input{
-    width:100%;
-    padding:12px;
-    margin:15px 0;
-}
-
-button{
-    background:#004aad;
-    color:white;
-    border:none;
-    padding:12px 20px;
-    cursor:pointer;
-}
-
-.result{
-    display:none;
-    margin-top:20px;
-    padding:20px;
+.verified{
     background:#e8f5e9;
-    border-radius:10px;
+    border-left:5px solid green;
+    padding:20px;
+    border-radius:5px;
+}
+
+.student{
+    margin-top:20px;
+}
+
+.student p{
+    margin:12px 0;
+    font-size:18px;
+}
+
+.status{
+    color:green;
+    font-weight:bold;
+    font-size:20px;
+}
+
+.footer{
+    text-align:center;
+    margin-top:30px;
+    color:#666;
 }
 </style>
 </head>
@@ -54,53 +70,43 @@ button{
 
 <div class="container">
 
-<h1>Aditya Computer Academy</h1>
+<div class="header">
+    <h1>Aditya Computer Academy</h1>
+    <h3>Certificate Verification System</h3>
+</div>
 
-<h2>QR Certificate Verification</h2>
+<div class="verified">
 
-<img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=ACA-CERT-250001">
+    <h2 class="status">✅ CERTIFICATE VERIFIED</h2>
 
-<br><br>
+    <div class="student">
 
-<input type="text"
-id="cert"
-placeholder="Enter Certificate Number">
+        <p><b>Student Name:</b> Rahul Kumar</p>
 
-<button onclick="verify()">
-Verify Certificate
-</button>
+        <p><b>Father Name:</b> Ramesh Kumar</p>
 
-<div class="result" id="result">
+        <p><b>Enrollment No:</b> ACA250001</p>
 
-<h3>✅ Certificate Verified</h3>
+        <p><b>Certificate No:</b> ACA-CERT-250001</p>
 
-<p><b>Student:</b> Rahul Kumar</p>
+        <p><b>Course:</b> ADCA</p>
 
-<p><b>Course:</b> ADCA</p>
+        <p><b>Session:</b> 2025-26</p>
 
-<p><b>Certificate:</b> ACA-CERT-250001</p>
+        <p><b>Institute:</b> Aditya Computer Academy</p>
 
-<p><b>Status:</b> Valid</p>
+        <p><b>Status:</b>
+        <span class="status">VALID CERTIFICATE</span></p>
+
+    </div>
 
 </div>
 
+<div class="footer">
+    © 2026 Aditya Computer Academy | All Rights Reserved
 </div>
 
-<script>
-function verify(){
-
-if(document.getElementById("cert").value
-=="ACA-CERT-250001")
-{
-document.getElementById("result")
-.style.display="block";
-}
-else
-{
-alert("Certificate Not Found");
-}
-}
-</script>
+</div>
 
 </body>
 </html>
