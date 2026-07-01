@@ -1,89 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Certificate Verification - Aditya Computer Academy</title>
+<title>Certificate Verification</title>
 
 <style>
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial,sans-serif;
+    font-family:Arial;
 }
 
 body{
-    background:#f4f7fc;
+    background:#f5f7fa;
+}
+
+.header{
+    background:#004aad;
+    color:white;
+    text-align:center;
+    padding:20px;
 }
 
 .container{
     max-width:700px;
-    margin:50px auto;
-    background:#fff;
+    margin:40px auto;
+    background:white;
     padding:30px;
     border-radius:10px;
-    box-shadow:0 0 15px rgba(0,0,0,0.1);
-}
-
-h1{
-    text-align:center;
-    color:#004aad;
-    margin-bottom:20px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
 }
 
 input{
     width:100%;
     padding:12px;
+    margin:15px 0;
     border:1px solid #ccc;
     border-radius:5px;
-    margin-bottom:15px;
 }
 
 button{
-    width:100%;
-    padding:12px;
     background:#004aad;
     color:white;
     border:none;
+    padding:12px 20px;
     border-radius:5px;
     cursor:pointer;
-    font-size:16px;
 }
 
 .result{
+    display:none;
     margin-top:20px;
     padding:20px;
-    background:#f8f9fa;
+    background:#e8f5e9;
+    border-left:5px solid green;
     border-radius:5px;
-    display:none;
 }
 
 .valid{
     color:green;
     font-weight:bold;
 }
-
-.invalid{
-    color:red;
-    font-weight:bold;
-}
 </style>
 </head>
+
 <body>
+
+<div class="header">
+    <h1>Aditya Computer Academy</h1>
+    <h3>Certificate Verification System</h3>
+</div>
 
 <div class="container">
 
-<h1>Certificate Verification</h1>
+    <h2>Verify Certificate</h2>
 
-<input type="text" id="certno"
-placeholder="Enter Certificate Number">
+    <input type="text"
+           id="certificate"
+           placeholder="Enter Certificate Number">
 
-<button onclick="verifyCertificate()">
-Verify Certificate
-</button>
+    <button onclick="verifyCertificate()">
+        Verify Certificate
+    </button>
 
-<div class="result" id="result"></div>
+    <div class="result" id="result">
+        <h3 class="valid">✅ Certificate Verified</h3>
+
+        <p><b>Student Name:</b> Rahul Kumar</p>
+
+        <p><b>Course:</b> ADCA</p>
+
+        <p><b>Certificate No:</b> ACA-CERT-250001</p>
+
+        <p><b>Session:</b> 2025-26</p>
+
+        <p><b>Status:</b> Valid</p>
+    </div>
 
 </div>
 
@@ -91,36 +105,14 @@ Verify Certificate
 function verifyCertificate(){
 
 let cert =
-document.getElementById("certno").value;
+document.getElementById("certificate").value;
 
-let result =
-document.getElementById("result");
-
-if(cert=="ACA2026001"){
-
-result.style.display="block";
-
-result.innerHTML=`
-<h3 class="valid">✓ Certificate Verified</h3>
-<hr><br>
-<p><b>Student Name:</b> Rahul Kumar</p>
-<p><b>Course:</b> ADCA</p>
-<p><b>Certificate No:</b> ACA2026001</p>
-<p><b>Issue Date:</b> 30/06/2026</p>
-<p><b>Status:</b> Valid</p>
-`;
-
-}else{
-
-result.style.display="block";
-
-result.innerHTML=`
-<h3 class="invalid">
-✗ Invalid Certificate Number
-</h3>
-`;
+if(cert=="ACA-CERT-250001"){
+    document.getElementById("result").style.display="block";
 }
-
+else{
+    alert("Certificate Not Found");
+}
 }
 </script>
 
