@@ -1,38 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Admin Login - Aditya Computer Academy</title>
+<title>Admin Login</title>
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif;
-}
-
 body{
-    background:linear-gradient(135deg,#004aad,#00aaff);
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    font-family:Arial;
+    background:#f5f7fa;
 }
 
 .container{
+    max-width:400px;
+    margin:100px auto;
     background:white;
-    padding:40px;
-    width:400px;
+    padding:30px;
     border-radius:10px;
-    box-shadow:0 0 20px rgba(0,0,0,0.2);
-    text-align:center;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
 }
 
 h2{
+    text-align:center;
     color:#004aad;
-    margin-bottom:20px;
 }
 
 input{
@@ -51,16 +41,12 @@ button{
     border:none;
     border-radius:5px;
     cursor:pointer;
-    font-size:16px;
 }
 
-button:hover{
-    background:#003080;
-}
-
-a{
-    text-decoration:none;
-    color:#004aad;
+.error{
+    color:red;
+    text-align:center;
+    margin-top:10px;
 }
 </style>
 </head>
@@ -71,18 +57,42 @@ a{
 
 <h2>Admin Login</h2>
 
-<form>
-<input type="text" placeholder="Admin Username" required>
+<input type="text"
+id="username"
+placeholder="Admin Username">
 
-<input type="password" placeholder="Password" required>
+<input type="password"
+id="password"
+placeholder="Password">
 
-<button type="submit">Login</button>
-</form>
+<button onclick="login()">
+Login
+</button>
 
-<br>
-<a href="index.html">← Back to Home</a>
+<div class="error" id="error"></div>
 
 </div>
+
+<script>
+function login(){
+
+let user =
+document.getElementById("username").value;
+
+let pass =
+document.getElementById("password").value;
+
+if(user=="admin" && pass=="123456")
+{
+window.location="admin-dashboard.html";
+}
+else
+{
+document.getElementById("error")
+.innerHTML="Invalid Username or Password";
+}
+}
+</script>
 
 </body>
 </html>
