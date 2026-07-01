@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QR Certificate Verification</title>
+
+<style>
+body{
+    font-family:Arial;
+    background:#f5f7fa;
+    padding:20px;
+}
+
+.container{
+    max-width:700px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px #ccc;
+    text-align:center;
+}
+
+h1{
+    color:#004aad;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin:15px 0;
+}
+
+button{
+    background:#004aad;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    cursor:pointer;
+}
+
+.result{
+    display:none;
+    margin-top:20px;
+    padding:20px;
+    background:#e8f5e9;
+    border-radius:10px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Aditya Computer Academy</h1>
+
+<h2>QR Certificate Verification</h2>
+
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=ACA-CERT-250001">
+
+<br><br>
+
+<input type="text"
+id="cert"
+placeholder="Enter Certificate Number">
+
+<button onclick="verify()">
+Verify Certificate
+</button>
+
+<div class="result" id="result">
+
+<h3>✅ Certificate Verified</h3>
+
+<p><b>Student:</b> Rahul Kumar</p>
+
+<p><b>Course:</b> ADCA</p>
+
+<p><b>Certificate:</b> ACA-CERT-250001</p>
+
+<p><b>Status:</b> Valid</p>
+
+</div>
+
+</div>
+
+<script>
+function verify(){
+
+if(document.getElementById("cert").value
+=="ACA-CERT-250001")
+{
+document.getElementById("result")
+.style.display="block";
+}
+else
+{
+alert("Certificate Not Found");
+}
+}
+</script>
+
+</body>
+</html>
