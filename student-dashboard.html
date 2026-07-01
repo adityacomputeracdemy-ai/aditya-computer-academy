@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Student Dashboard - Aditya Computer Academy</title>
+<title>Student Dashboard</title>
 
 <style>
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial,sans-serif;
+    font-family:Arial;
 }
 
 body{
-    background:#f4f7fc;
+    background:#f5f7fa;
 }
 
 .header{
@@ -25,30 +25,17 @@ body{
 }
 
 .container{
-    display:flex;
+    width:90%;
+    max-width:1200px;
+    margin:20px auto;
 }
 
-.sidebar{
-    width:250px;
-    background:#002d66;
-    height:100vh;
-}
-
-.sidebar a{
-    display:block;
-    color:white;
-    text-decoration:none;
-    padding:15px;
-    border-bottom:1px solid rgba(255,255,255,0.1);
-}
-
-.sidebar a:hover{
-    background:#004aad;
-}
-
-.main{
-    flex:1;
-    padding:30px;
+.profile{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    margin-bottom:20px;
 }
 
 .cards{
@@ -59,24 +46,21 @@ body{
 
 .card{
     background:white;
-    padding:25px;
+    padding:20px;
+    text-align:center;
     border-radius:10px;
     box-shadow:0 0 10px rgba(0,0,0,0.1);
-    text-align:center;
 }
 
-.card h3{
+.card a{
+    text-decoration:none;
+    color:#004aad;
+    font-weight:bold;
+}
+
+h2{
     color:#004aad;
     margin-bottom:10px;
-}
-
-button{
-    background:#004aad;
-    color:white;
-    border:none;
-    padding:10px 20px;
-    border-radius:5px;
-    cursor:pointer;
 }
 </style>
 </head>
@@ -90,11 +74,50 @@ button{
 
 <div class="container">
 
-<div class="sidebar">
-    <a href="#">🏠 Dashboard</a>
-    <a href="#">👤 My Profile</a>
-    <a href="#">📄 My Marksheet</a>
-    <a href="#">🏆 My Certificate</a>
-    <a href="#">🎫 Admit Card</a>
-    <a href="#">💰 Fee Status</a>
-    <a href="#">
+<div class="profile">
+    <h2>Student Profile</h2>
+    <p><b>Name:</b> Rahul Kumar</p>
+    <p><b>Enrollment No:</b> ACA250001</p>
+    <p><b>Course:</b> ADCA</p>
+    <p><b>Session:</b> 2026-27</p>
+    <p><b>Status:</b> Active</p>
+</div>
+
+<div class="cards">
+
+<div class="card">
+    <h3>📄 Marksheet</h3>
+    <a href="generate-marksheet.html">View</a>
+</div>
+
+<div class="card">
+    <h3>🎓 Certificate</h3>
+    <a href="certificate-verification.html">View</a>
+</div>
+
+<div class="card">
+    <h3>💳 Fee Status</h3>
+    <a href="online-fee-payment.html">View</a>
+</div>
+
+<div class="card">
+    <h3>📝 Attendance</h3>
+    <a href="attendance-management.html">View</a>
+</div>
+
+<div class="card">
+    <h3>🪪 ID Card</h3>
+    <a href="id-card.html">View</a>
+</div>
+
+<div class="card">
+    <h3>📋 Admit Card</h3>
+    <a href="admit-card.html">View</a>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
